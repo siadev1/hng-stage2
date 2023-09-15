@@ -14,7 +14,7 @@ Method: GET
 
 Request:
 
-To retrieve user information, send a GET request to /user.
+To retrieve user information, send a GET request to /api.
 You can provide the user's ID as a parameter in a json to fetch a specific user's data.
 Example Request:
 
