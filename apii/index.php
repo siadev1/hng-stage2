@@ -35,7 +35,7 @@ try {
     echo $response;
 } catch (\Phroute\Phroute\Exception\HttpRouteNotFoundException $e) {
     header('HTTP/1.0 404 Not Found');
-    echo '404 Page Not Found';
+    echo 'err 404 Page Not Found';
 } catch (\Phroute\Phroute\Exception\HttpMethodNotAllowedException $e) {
     header('HTTP/1.0 405 Method Not Allowed');
     echo '405 Method Not Allowed';
