@@ -1,6 +1,6 @@
 <?php
 include __DIR__ . '/vendor/autoload.php';
-include_once 'router.php';
+
 
 use Phroute\Phroute\Dispatcher;
 use Phroute\Phroute\RouteCollector;
@@ -10,21 +10,21 @@ use Phroute\Phroute\RouteCollector;
 $collector = new RouteCollector();
 
 
-$collector->delete('api/', function(){
+$collector->delete('/api', function(){
     require_once'api1.php';
 });
 
 
-$collector->post('api/', function(){
+$collector->post('/api', function(){
     require_once'api1.php';
 });
 
-$collector->get('api/', function(){
+$collector->get('/api', function(){
     require_once'api1.php';
 });
 
 
-$collector->put('api/', function(){
+$collector->put('/api', function(){
     require_once'api1.php';
 });
 
