@@ -8,7 +8,7 @@ use Phroute\Phroute\RouteCollector;
 
 
 $collector = new RouteCollector();
-
+echo "loaded";
 
 $collector->delete('/api', function(){
     require_once'api1.php';
